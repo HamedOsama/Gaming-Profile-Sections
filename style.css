@@ -1,0 +1,332 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #eee;
+        font-family: sans-serif;
+    }
+    
+    .heading {
+        margin: 20px 40px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+    }
+    
+    .heading .logo {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .heading .image img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 1px 5px #eee;
+    }
+    
+    .heading .logo .text p:first-of-type {
+        position: relative;
+        font-weight: 700;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .heading .logo .text p:first-of-type:after {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 200px;
+        border-radius: 6px;
+        background-image: linear-gradient(to right, rgb(6, 126, 96) 80%, #eee 80%);
+        bottom: -20px;
+        left: 0;
+    }
+    
+    .heading .more {
+        position: relative;
+        border-left: 1px solid gray;
+        padding: 0 30px;
+    }
+    /* .heading .text::before {} */
+    
+    .heading .more h2 {
+        margin: 20px 0;
+    }
+    
+    .heading .more p {
+        /* padding: 7px; */
+        color: darkgray;
+        line-height: 1.4;
+    }
+    
+    .heading .logo .text p span {
+        color: rgb(6, 126, 96);
+    }
+    
+    .heading .more p:last-of-type {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+    }
+    /*end heading*/
+    /* start points */
+    
+    .points {
+        margin: 40px 40px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2.main-heading {
+        color: white;
+        background-color: gray;
+        width: fit-content;
+        font-weight: 600;
+        font-size: 21px;
+        padding: 10px;
+        margin: 15px;
+    }
+    
+    .points p {
+        margin: 15px 15px 30px;
+    }
+    
+    .points p span {
+        color: rgb(6, 126, 96);
+        font-weight: bold;
+    }
+    
+    .points p .rose {
+        color: rgb(228, 34, 154);
+    }
+    
+    .points p:first-of-type {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+        padding-bottom: 15px;
+        margin: 15px 15px 5px;
+    }
+    
+    .points p:nth-last-of-type(2) {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+        padding-bottom: 15px;
+        margin: 15px 15px 0;
+    }
+    /* end points */
+    /* start trophies */
+    
+    .trophies {
+        margin: 40px 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .trophies .images {
+        margin: 40px 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .trophies img,
+    .trophies div img {
+        max-width: 90px;
+        max-height: 90px;
+        margin-bottom: 10px;
+        margin-right: 7px;
+    }
+    
+    .trophies div.fade {
+        position: relative;
+    }
+    
+    .trophies div.fade::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(249 249 249);
+        width: 90px;
+        height: 90px;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        opacity: 80%;
+    }
+    /* end trophies */
+    /* start ladder  */
+    
+    .ladder {
+        /* margin: 40px 40px; */
+        margin-bottom: 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ladder p {
+        margin: 10px 20px 25px;
+    }
+    
+    .ladder p span:first-of-type {
+        color: crimson;
+        font-weight: bold;
+    }
+    
+    .ladder p span:last-of-type {
+        font-weight: bold;
+        color: rgb(0, 183, 255);
+    }
+    /* ends ladder  */
+    /* start power */
+    
+    .power {
+        /* margin: 40px 40px; */
+        margin-bottom: 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .power p {
+        margin: 10px 20px 10px;
+        color: #000000c9;
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .power p span.yes::after {
+        content: "Yes";
+        position: absolute;
+        right: 0;
+        font-weight: bold;
+        color: green;
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+    
+    .power p span.no::after {
+        content: "No";
+        position: absolute;
+        right: 2px;
+        font-weight: bold;
+        color: red;
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+    
+    .power p:last-of-type {
+        padding-bottom: 20px;
+        border: none;
+    }
+    /* start media and containers */
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Small */
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 692px;
+        }
+    }
+    /* Medium */
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+        .trophies img,
+        .trophies div img {
+            max-width: 88px;
+            max-height: 88px;
+        }
+        .trophies img,
+        .trophies div img {
+            max-width: 83px;
+            max-height: 84px;
+        }
+        .trophies div.fade::after {
+            width: 83px;
+            height: 83px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+            width: auto;
+            margin: 40px 40px;
+        }
+    }
+    
+    @media(max-width:800px) {
+        .heading {
+            margin: 20px 40px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: none;
+        }
+        .trophies img,
+        .trophies div img {
+            max-width: 85px;
+            max-height: 85px;
+            margin-right: 10px;
+        }
+        .trophies div.fade::after {
+            max-width: 85px;
+            max-height: 85px;
+        }
+        .heading .more {
+            border-top: 1px solid #80808066;
+            border-left: none;
+        }
+        .container {
+            padding: 0 0px;
+            margin: 30px 22px;
+        }
+        .trophies .images {
+            display: grid;
+            margin: 40px 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    
+    @media(max-width:460px) {
+        .power p {
+            margin: 5px 21px 20px;
+        }
+        .power p:first-of-type {
+            margin: 10px 25px 20px;
+        }
+        .ladder p {
+            letter-spacing: -0.1px;
+        }
+        .trophies .images {
+            display: grid;
+            margin: 40px 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    
+    @media(max-width:376px) {
+        .trophies .images {
+            display: grid;
+            margin: 40px 40px;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    /* end media and container  */
