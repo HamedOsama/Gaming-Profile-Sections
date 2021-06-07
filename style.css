@@ -250,17 +250,12 @@
         }
         .trophies img,
         .trophies div img {
-            max-width: 88px;
-            max-height: 88px;
-        }
-        .trophies img,
-        .trophies div img {
-            max-width: 83px;
-            max-height: 84px;
+            max-width: 64px;
+            max-height: 64px;
         }
         .trophies div.fade::after {
-            width: 83px;
-            height: 83px;
+            width: 64px;
+            height: 64px;
         }
     }
     
@@ -269,6 +264,15 @@
             width: 1170px;
             width: auto;
             margin: 40px 40px;
+        }
+        .trophies img,
+        .trophies div img {
+            max-width: 88px;
+            max-height: 88px;
+        }
+        .trophies div.fade::after {
+            width: 88px;
+            height: 88px;
         }
     }
     
